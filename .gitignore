@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+
+# Generated artifacts (reproducible via `python main.py all`)
+models/*.joblib
+models/*.csv
+data/*.csv
+data/*.parquet
+reports/*.png
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/*.ipynb
+
+# Streamlit
+.streamlit/secrets.toml

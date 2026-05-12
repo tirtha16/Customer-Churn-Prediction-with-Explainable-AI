@@ -1,0 +1,194 @@
+{
+  "best_model": "logistic_regression",
+  "metrics": {
+    "logistic_regression": {
+      "name": "logistic_regression",
+      "roc_auc": 0.8086860653170834,
+      "pr_auc": 0.7203384901548434,
+      "f1": 0.656896551724138,
+      "cv_roc_auc_mean": 0.821969060200499,
+      "cv_roc_auc_std": 0.009095110763156389,
+      "confusion_matrix": [
+        [
+          630,
+          248
+        ],
+        [
+          150,
+          381
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.8076923076923077,
+          "recall": 0.7175398633257403,
+          "f1-score": 0.7599517490952955,
+          "support": 878.0
+        },
+        "1": {
+          "precision": 0.6057233704292527,
+          "recall": 0.7175141242937854,
+          "f1-score": 0.656896551724138,
+          "support": 531.0
+        },
+        "accuracy": 0.7175301632363378,
+        "macro avg": {
+          "precision": 0.7067078390607802,
+          "recall": 0.7175269938097628,
+          "f1-score": 0.7084241504097167,
+          "support": 1409.0
+        },
+        "weighted avg": {
+          "precision": 0.7315776833582537,
+          "recall": 0.7175301632363378,
+          "f1-score": 0.7211140558347671,
+          "support": 1409.0
+        }
+      }
+    },
+    "random_forest": {
+      "name": "random_forest",
+      "roc_auc": 0.7954926665208122,
+      "pr_auc": 0.6948840016745045,
+      "f1": 0.6408839779005525,
+      "cv_roc_auc_mean": 0.8101004269827217,
+      "cv_roc_auc_std": 0.010259699114129906,
+      "confusion_matrix": [
+        [
+          671,
+          207
+        ],
+        [
+          183,
+          348
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.7857142857142857,
+          "recall": 0.7642369020501139,
+          "f1-score": 0.7748267898383372,
+          "support": 878.0
+        },
+        "1": {
+          "precision": 0.6270270270270271,
+          "recall": 0.655367231638418,
+          "f1-score": 0.6408839779005525,
+          "support": 531.0
+        },
+        "accuracy": 0.723207948899929,
+        "macro avg": {
+          "precision": 0.7063706563706564,
+          "recall": 0.7098020668442659,
+          "f1-score": 0.7078553838694448,
+          "support": 1409.0
+        },
+        "weighted avg": {
+          "precision": 0.7259109256270364,
+          "recall": 0.723207948899929,
+          "f1-score": 0.7243486967659711,
+          "support": 1409.0
+        }
+      }
+    },
+    "xgboost": {
+      "name": "xgboost",
+      "roc_auc": 0.7990403630919442,
+      "pr_auc": 0.6966659921726122,
+      "f1": 0.6461538461538462,
+      "cv_roc_auc_mean": 0.7952865276137663,
+      "cv_roc_auc_std": 0.012084814029354726,
+      "confusion_matrix": [
+        [
+          705,
+          173
+        ],
+        [
+          195,
+          336
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.7833333333333333,
+          "recall": 0.8029612756264237,
+          "f1-score": 0.7930258717660292,
+          "support": 878.0
+        },
+        "1": {
+          "precision": 0.6601178781925344,
+          "recall": 0.632768361581921,
+          "f1-score": 0.6461538461538462,
+          "support": 531.0
+        },
+        "accuracy": 0.7388218594748048,
+        "macro avg": {
+          "precision": 0.7217256057629339,
+          "recall": 0.7178648186041723,
+          "f1-score": 0.7195898589599377,
+          "support": 1409.0
+        },
+        "weighted avg": {
+          "precision": 0.7368979843767938,
+          "recall": 0.7388218594748048,
+          "f1-score": 0.737675236137875,
+          "support": 1409.0
+        }
+      }
+    }
+  },
+  "feature_names": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "SeniorCitizen",
+    "AvgChargesPerMonth",
+    "ChargeToTenureRatio",
+    "NumAddOns",
+    "TenureGroupOrdinal",
+    "gender_Female",
+    "gender_Male",
+    "Partner_No",
+    "Partner_Yes",
+    "Dependents_No",
+    "Dependents_Yes",
+    "PhoneService_No",
+    "PhoneService_Yes",
+    "MultipleLines_No",
+    "MultipleLines_No phone service",
+    "MultipleLines_Yes",
+    "InternetService_DSL",
+    "InternetService_Fiber optic",
+    "InternetService_No",
+    "OnlineSecurity_No",
+    "OnlineSecurity_No internet service",
+    "OnlineSecurity_Yes",
+    "OnlineBackup_No",
+    "OnlineBackup_No internet service",
+    "OnlineBackup_Yes",
+    "DeviceProtection_No",
+    "DeviceProtection_No internet service",
+    "DeviceProtection_Yes",
+    "TechSupport_No",
+    "TechSupport_No internet service",
+    "TechSupport_Yes",
+    "StreamingTV_No",
+    "StreamingTV_No internet service",
+    "StreamingTV_Yes",
+    "StreamingMovies_No",
+    "StreamingMovies_No internet service",
+    "StreamingMovies_Yes",
+    "Contract_Month-to-month",
+    "Contract_One year",
+    "Contract_Two year",
+    "PaperlessBilling_No",
+    "PaperlessBilling_Yes",
+    "PaymentMethod_Bank transfer (automatic)",
+    "PaymentMethod_Credit card (automatic)",
+    "PaymentMethod_Electronic check",
+    "PaymentMethod_Mailed check"
+  ],
+  "n_train": 5634,
+  "n_test": 1409,
+  "churn_rate": 0.37682805622604004
+}
