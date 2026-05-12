@@ -1,7 +1,7 @@
 # Customer Churn Prediction with Explainable AI
 
-Predicts which customers of a subscription service are likely to churn and
-shows why, using SHAP and LIME. Includes a Streamlit dashboard.
+Predicts which customers of a subscription service are likely to churn
+and shows why, using SHAP and LIME. Includes a Streamlit dashboard.
 
 ## Features
 
