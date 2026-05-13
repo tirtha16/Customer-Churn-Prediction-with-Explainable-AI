@@ -61,15 +61,33 @@ generated so the pipeline still runs.
 
 ## Dashboard pages
 
-1. Portfolio Overview - totals, churn probability distribution, churn by
-   contract type, tenure vs charges scatter.
-2. Model Performance - metrics table for all three models, plus ROC, PR,
-   confusion matrix, and feature importance plots.
-3. High-Risk Customers - table of customers with churn probability >= 0.60,
-   downloadable as CSV.
-4. Score a Customer - pick an existing customer or build one manually. Shows
-   probability, risk tier, SHAP top drivers, and LIME breakdown.
-5. Global Explainability - SHAP summary plot.
+### Portfolio Overview
+Totals, churn probability distribution, churn by contract type, tenure vs
+charges scatter.
+
+![Portfolio Overview](screenshots/portfolio_overview.png)
+
+### Model Performance
+Metrics table for all three models, plus ROC, PR, confusion matrix, and
+feature importance plots.
+
+![Model Performance](screenshots/model_performance.png)
+
+### High-Risk Customers
+Table of customers with churn probability >= 0.60, downloadable as CSV.
+
+![High-Risk Customers](screenshots/high_risk_customers.png)
+
+### Score a Customer
+Pick an existing customer or build one manually. Shows probability, risk
+tier, SHAP top drivers, and LIME breakdown.
+
+![Score a Customer](screenshots/score_customer.png)
+
+### Global Explainability
+SHAP summary plot of population-level drivers.
+
+![Global Explainability](screenshots/global_explainability.png)
 
 ## Notes
 
